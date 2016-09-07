@@ -280,7 +280,7 @@ function ModalRemote(modalId){
 			if (response.forceReload == 'true') {
 				$.pjax.reload({container: '#crud-datatable-pjax'});
 			} else {
-				$.pjax.reload({container: response.forceReload});
+				$.pjax.reload({container: '#crud-datatable-pjax'});
 			}
 		}
 
